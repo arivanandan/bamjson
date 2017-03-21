@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BAM</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+		<style>
+			body {
+				text-align: center;
+				background: #EEE;
+			}
+			.mdl-button {
+				width: 100%;
+			}
+		</style>
+		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  </head>
+  <body>
+		<div class="mdl-grid">
+		  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+		  	<div class="mdl-card mdl-shadow--2dp">
+		  	<div class="mdl-card__supporting-text">
+		  	<h1 class="mdl-typography--title"><strong>Bank Accounts Manager</strong></h1>
+				<br/><br/>
+		  	<form id="register_form" name="form" action="/registername" method="POST">
+		  	<p style = 'font-size: 16px; text-align: left'>
+					<strong>Name&nbsp</strong>
+					<input type="text" id="name" name="name">
+					<br/><br/>
+					<strong>Bank&nbsp&nbsp</strong>
+					<select defaultValue = 'axis' name='bank'>
+						<option value='icici'>ICICI</option>
+						<option value='federal'>Federal</option>
+						<option value='axis'>Axis</option>
+					</select>
+				</p>
+				<ul class="demo-list-icon mdl-list">
+			  <li class="mdl-list__item">
+			    <span class="mdl-list__item-primary-content">
+			      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-typography--text-center">REGISTER</button>
+			    </span>
+			  </li>
+				</ul>
+		  	</div>
+		  	</div>
+		  </div>
+		</div>
+  </body>
+</html>
